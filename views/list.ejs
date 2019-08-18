@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Charities</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        </tr>
+      </thead>
+      <tbody>
+      <%for(i=0;i<name.length;i++){%>
+        <tr>
+          <td>
+            <strong class="book-title"><a href=<%=charityURL[i]%>><%=name[i]%></a></strong>
+            <span class="text-offset">Ein: <%=ein[i]%></span>
+          </td>
+          <td><%=state[i]+" " +city[i]+" " + postalCode[i]+" " +streetAddress[i] %></td>
+        </tr>
+      <%  }%>
+      </tbody>
+    </table>
+  </body>
+</html>

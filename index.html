@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Charity Selector</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/checkout/">
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/public/css/styles.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    <div class="container">
+  <div class="py-5 text-center">
+    <h2>Charity Selecter</h2>
+    <p class="lead">Below are the forms that are all optional.</p>
+  </div>
+
+  <form action="/" method="post">
+    <div class="col-md-8 order-md-1">
+      <div class="row">
+        <div class="col-md-5 mb-3">
+          <label for="category">Category/Cause:</label>
+          <select class="custom-select d-block w-100" name = category>
+            <option value="all">All</option>
+            <option value="&search=Animals">Animals</option>
+            <option value="&search=Arts%2C%20Culture%2C%20Humanities">Arts, Culture, Humanities</option>
+            <option value="&search=Community Development">Community Development</option>
+            <option value="&search=Education">Education</option>
+            <option value="&search=Enviroment">Enviroment</option>
+            <option value="&search=Health">Health</option>
+            <option value="&search=Human%20and%20Civil%20Rights">Human and Civil Rights</option>
+            <option value="&search=Religion">Religion</option>
+            <option value="&search=Research%20and%20Development">Research and Development</option>
+          </select>
+        </div>
+        </div>
+
+        <hr class="mb-4">
+        <h4 class="mb-3">Location</h4>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <label for="state">State</label>
+            <select class="custom-select d-block w-100" name = state >
+              <option value="all">All</option>
+              <option value="AK">AK</option>
+              <option value="AL">AL</option>
+              <option value="AR">AR</option>
+              <option value="AZ">AZ</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DC">DC</option>
+              <option value="DE">DE</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="HI">HI</option>
+              <option value="IA">IA</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="KS">KS</option>
+              <option value="KY">KY</option>
+              <option value="LA">LA</option>
+              <option value="MA">MA</option>
+              <option value="MD">MD</option>
+              <option value="ME">ME</option>
+              <option value="MI">MI</option>
+              <option value="MN">MN</option>
+              <option value="MO">MO</option>
+              <option value="MS">MS</option>
+              <option value="MT">MT</option>
+              <option value="NC">NC</option>
+              <option value="ND">ND</option>
+              <option value="NE">NE</option>
+              <option value="NH">NH</option>
+              <option value="NJ">NJ</option>
+              <option value="NM">NM</option>
+              <option value="NV">NV</option>
+              <option value="NY">NY</option>
+              <option value="OH">OH</option>
+              <option value="OK">OK</option>
+              <option value="OR">OR</option>
+              <option value="PA">PA</option>
+              <option value="PR">PR</option>
+              <option value="RI">RI</option>
+              <option value="SC">SC</option>
+              <option value="SD">SD</option>
+              <option value="TN">TN</option>
+              <option value="TX">TX</option>
+              <option value="UT">UT</option>
+              <option value="VA">VA</option>
+              <option value="VI">VI</option>
+              <option value="VT">VT</option>
+              <option value="WA">WA</option>
+              <option value="WI">WI</option>
+              <option value="WV">WV</option>
+              <option value="WY">WY</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="city">City</label>
+            <input type="text" class="form-control" name=city placeholder="---" >
+          </div>
+        </div>
+
+
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="dpp" name =dpp>
+          <label class="custom-control-label" for="dpp">Donor Privacy Policy</label>
+        </div>
+
+        <hr class="mb-4">
+        <div class="col-md-8 order-md-1">
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="rating">Overall Rating:</label>
+              <select class="custom-select d-block w-100" name = rating>
+                <option value="all">All</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+                <option value="0">0</option>
+              </select>
+            </div>
+
+
+          <div class="col-md-4 mb-3">
+            <label for="size">Size</label>
+            <select class="custom-select d-block w-100" name =size >
+              <option value="all">All</option>
+              <option value="1">upto $3.5M</option>
+              <option value="2">$3.5M to $13.5M</option>
+              <option value="3">$13.5M and up</option>
+            </select>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="sow">Scope of Work</label>
+            <select class="custom-select d-block w-100" name =sow >
+              <option value="all">All</option>
+              <option value="&scopeOfWork=regional">Regional</option>
+              <option value="&scopeOfWork=national">National</option>
+              <option value="&scopeOfWork=international">International</option>
+            </select>
+          </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="form-validation.js"></script></body>
+</html>
